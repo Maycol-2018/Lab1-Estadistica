@@ -27,7 +27,8 @@
 		\vfill
 		{\Large Abril 2025 \par}
 	\end{titlepage} \newpage
-	%\tableofcontents
+	\tableofcontents
+	\newpage
 	\section{Descripción}  
 	Una compañía le ha encargado a usted que la asesore en la decisión sobre cuáles bolsas de 5g de azúcar debe 
 	comprar. Su tarea es evaluar si el contenido de azúcar en bolsas pequeñas es de 5g, como se anuncia en su 
@@ -36,5 +37,160 @@
 	\section{Actividad}
 	
 	\subsection{¿Cuántas poblaciones hay en este problema? ¿Cuáles son? }
+	En el problema hay dos poblaciones, ya que se están estudiando los paquetes de azúcar de dos empresas azucareras \textbf{Manuelita} e \textbf{Incauca}.
+	
+	\subsection{¿Cuáles son las variables de interés en este estudio? ¿Cuáles son las escalas de medición?}
+	Las variables de estudio son el peso de los paquetes con azúcar y el peso solo del azúcar de ambas empresas, usando como medición los \textbf{gramos}. Estos datos fueron tomados en el laboratorio del edificio de Estadística, usando una balanza digital. En el proceso se tomo muestras de 16 de paquetes de 5 gramos, de cada empresa, el margen de error de cada medición no se pudo tomar con exactitud debido a que la balanza solo mostraba dos cifras significativas para cada medición. 
+	
+	\subsection{¿Está cumpliendo cada una de estas empresas su ofrecimiento de empacar 5g de azúcar en cada bolsa?}
+	Para determinar si cada empresa empaca 5g de azúcar en cada bolsa se ha decidido tomado en cuenta la columna de datos Peso de azúcar.
+	Como los datos obtenidos son de naturaleza cuantitativa continua se ha hecho la siguiente Tabla de frecuencias del azúcar sin su bolsa.
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{Intervalo} & \textbf{Frec\_Abs} & \textbf{Frec\_Rel} & \textbf{Frec\_Acum} & \textbf{Frec\_Rel\_Acum} \\
+			\hline
+			$[4.6, 4.8)$ & 1 & 0.0625 & 1 & 0.0625 \\
+			\hline
+			$[4.8, 5)$ & 4 & 0.2500 & 5 & 0.3125 \\
+			\hline
+			$[5, 5.2]$ & 11 & 0.6875 & 16 & 1.0000 \\
+			\hline
+		\end{tabular}
+		\caption{Tabla de frecuencias-Peso de Azucar-Empresa Manuelita}
+	\end{table}
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{Intervalo} & \textbf{Frec\_Abs} & \textbf{Frec\_Rel} & \textbf{Frec\_Acum} & \textbf{Frec\_Rel\_Acum} \\
+			\hline
+			$[4.6,4.73)$ & 1 & 0.0625 & 1 & 0.0625 \\
+			\hline
+			$[4.73,4.87)$ & 6 & 0.3750 & 7 & 0.4375 \\
+			\hline
+			$[4.87,5]$ & 9 & 0.5625 & 16 & 1.0000 \\
+			\hline
+		\end{tabular}
+		\caption{Tabla de frecuencias-Peso de Azucar-Empresa Incauca}
+	\end{table}
+	
+	Con los anteriores tablas, se puede sacar la siguiente información: \\
+	\vspace{0.2cm}
+	
+	\textbf{{\large Medidas de centralidad y dispersión para la Fabrica Manuelita}}\\
+	{\large Media:} 4.93 \\
+	{\large Desviación estándar:} 0.14 \\
+	{\large Coeficiente de variación}: $2.83\%$ \\
+	\vspace{0.2cm}
+
+	\textbf{{\large Medidas de centralidad y dispersión para la Fabrica Incauca}} \\
+	{\large Media:} 4.9 \\
+	{\large Desviación estándar:} 0.126 \\
+	{\large Coeficiente de variación}: $2.57\%$ \\
+	\vspace{0.2cm}
+	
+	{\large \textbf{Conclusión}}: 
+	Aunque los valores son muy pequeños se puede decir que las empresas no ofrecen un empaquetado preciso de $5g$ de azúcar, esto se ve reflejado en las medidas de centralidad obtenidas de ambas empresas, para la Fabrica Manuelita, la media es de 4.93 lo cual indica que los datos no se concentran en 5, y lo mismo sucede con la Fabrica Incauca, cuya media es de 4.9, que está alejada un poco más del valor ideal. Además la medida de dispersión como el coeficiente de variación $CV$ permite corroborar nuestra conclusión indicando que los datos no son homogéneos. Si los datos no estuvieran dispersos, su  $CV$ sería del $0.0\%$
+	
+	\subsection{¿Son mayores las cantidades de azúcar empacadas en las bolsas de una empresa que en las de la otra? }
+	Teniendo en cuenta que solo se está midiendo el azúcar sin el empaque, entonces se debe recurrir a otras herramienta pues las medidas obtenidas como la media $\overline{x}$ y el  $CV$ en la anterior pregunta no nos permiten llegar a una respuesta.\\
+	
+	La función empírica de frecuencia relativa acumulada $P(X\le x)$, nos permite realizar el siguiente analisis.
+	\vspace{0.2cm}
+	
+	\textbf{{\large Fabrica Manuelita}}\\
+	$P(X<5) = 31.25\%$ \\
+	$P(X>5) = 6.25\%$ \\
+	\vspace{0.2cm}
+	
+	\textbf{{\large Fabrica Incauca}}\\
+	$P(X>5) = 43.75\%$ \\
+	$P(X>5) = 0\%$ \\
+	
+	Aunque el coeficiente de variación de la fabrica Manuelita es mayor que el de su competencia, esto no permite decir nada de cual empresa ofrece una mayor cantidad de azúcar empacada. Pero con la función empírica de frecuencia relativa acumulada se puede determinar lo siguiente.
+	
+	El $31.25\%$ de los empaques de la fabrica Manuelita tiene un peso menor a $5 gramos$, mientras que en la fabrica Incauca el  $43.75\%$, de sus empaques tienen un peso menor que a $5 gramos$.
+	En \textbf{conclusión} la fabrica Manuelita ofrece mayores cantidades de azúcar de empacado en las bolsas. 
+	
+	Lo anterior se puede visualizar graficamente con las siguientes funciónes de densidad. \\
+	
+	
+	\begin{figure}[ht]
+		\centering 
+		\begin{minipage}{0.45\textwidth} 
+			\centering
+			\includegraphics[width=\linewidth]{img/densidad1} 
+			\caption{Función de densidad de la fabrica Manuelita} 
+			\label{fig:densidad1}
+		\end{minipage}
+		\hfill 
+		\begin{minipage}{0.45\textwidth} 
+			\centering
+			\includegraphics[width=\linewidth]{img/densidad2}
+			\caption{Función de densidad de la fabrica Incauca}
+			\label{fig:densidad2}
+		\end{minipage}
+	\end{figure}
+	
+	\subsection{¿Son las bolsas vacías de una empresa más pesadas que las de la otra? }
+	Para ello se ha decidido obtener otra columna de datos llamada \textbf{"Peso de Bolsas"}, la cual se obtiene a partir de la diferencia de los datos de la columna \textbf{"Peso de Bolsa Sellada"} y \textbf{"Peso de Azucar"}. 
+	
+	Los datos obtenidos son los siguientes:\\ 
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|} 
+			\hline
+			0.1 & 0.1 & 0.1 & 0.1 \\ 
+			\hline
+			0.2 & 0.2 & 0.2 & 0.2 \\ 
+			\hline
+			0.2 & 0.2 & 0.2 & 0.4 \\ 
+			\hline
+			0.4 & 0.4 & 0.4 & 0.6 \\ 
+			\hline
+		\end{tabular}
+		\caption{Peso de bolsas vacias-Empresa Manuelita}
+	\end{table} \newpage
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|} 
+			\hline
+			0.1 & 0.2 & 0.2 & 0.2 \\ 
+			\hline
+			0.2 & 0.2 & 0.2 & 0.4 \\ 
+			\hline
+			0.4 & 0.4 & 0.4 & 0.6 \\ 
+			\hline
+			0.6 & 0.6 & 0.6 & 0.6 \\ 
+			\hline
+		\end{tabular}
+		\caption{Peso de bolsas vacias-Empresa Incauca}
+	\end{table}
+	
+	A partir de los datos directamente se obtienen las siguientes métricas. \\
+	
+	\textbf{{\large Medidas de centralidad y dispersión para la Fabrica Manuelita}}\\
+	{\large Media:} 0.25 \\
+	{\large Desviación estándar:} 0.14 \\
+	{\large Coeficiente de variación}: $56\%$ \\
+	\vspace{0.2cm}
+	
+	\textbf{{\large Medidas de centralidad y dispersión para la Fabrica Incauca}}\\
+	{\large Media:} 0.34 \\
+	{\large Desviación estándar:} 0.178 \\
+	{\large Coeficiente de variación}: $52.01\%$ \\
+	\vspace{0.2cm}
+	
+	{\large \textbf{Conclusión}}: 
+	Tomando como referencia la media, la empresa Manuelita tiene una media de $\overline{x_1}=0.25g$ que es menor, con respecto a la fabrica Incauca $\overline{x_2}=0.34g$, lo que indica que la fabrica Incauca tiene bolsas vacías con mayor peso, pero estas medidas varian mucho con respecto a su media, eso es lo que indica su coeficiente de variación. 
+	
+	Por otro lado la empresa Incauca, tiene menor variabilidad con respecto a su competencia pero no por eso deja de tener datos muy heterogéneos. 
+	Por lo que se concluye que la empresa Icauca tiene bolsas vacias más pesadas. Esto puede ser un buen indicador ya se porque tiene más grosor o calidad del material, pero solo es una hipotesis. 
 	
 \end{document}

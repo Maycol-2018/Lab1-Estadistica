@@ -1,3 +1,8 @@
-\contentsline {section}{\numberline {1}Descripción}{1}{}%
-\contentsline {section}{\numberline {2}Actividad}{1}{}%
-\contentsline {subsection}{\numberline {2.1}¿Cuántas poblaciones hay en este problema? ¿Cuáles son? }{1}{}%
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Descripción}{2}{}%
+\contentsline {section}{\numberline {2}Actividad}{2}{}%
+\contentsline {subsection}{\numberline {2.1}¿Cuántas poblaciones hay en este problema? ¿Cuáles son? }{2}{}%
+\contentsline {subsection}{\numberline {2.2}¿Cuáles son las variables de interés en este estudio? ¿Cuáles son las escalas de medición?}{2}{}%
+\contentsline {subsection}{\numberline {2.3}¿Está cumpliendo cada una de estas empresas su ofrecimiento de empacar 5g de azúcar en cada bolsa?}{2}{}%
+\contentsline {subsection}{\numberline {2.4}¿Son mayores las cantidades de azúcar empacadas en las bolsas de una empresa que en las de la otra? }{3}{}%
+\contentsline {subsection}{\numberline {2.5}¿Son las bolsas vacías de una empresa más pesadas que las de la otra? }{4}{}%
