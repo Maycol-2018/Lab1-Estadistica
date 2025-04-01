@@ -191,6 +191,95 @@
 	Tomando como referencia la media, la empresa Manuelita tiene una media de $\overline{x_1}=0.25g$ que es menor, con respecto a la fabrica Incauca $\overline{x_2}=0.34g$, lo que indica que la fabrica Incauca tiene bolsas vacías con mayor peso, pero estas medidas varian mucho con respecto a su media, eso es lo que indica su coeficiente de variación. 
 	
 	Por otro lado la empresa Incauca, tiene menor variabilidad con respecto a su competencia pero no por eso deja de tener datos muy heterogéneos. 
-	Por lo que se concluye que la empresa Icauca tiene bolsas vacias más pesadas. Esto puede ser un buen indicador ya se porque tiene más grosor o calidad del material, pero solo es una hipotesis. 
+    \vspace{0.5cm}
+	Por lo que se concluye que la empresa Icauca tiene bolsas vacias más pesadas. Esto puede ser un buen indicador ya se porque tiene más grosor o calidad del material, pero solo es una hipotesis.
+
+    \subsection{¿Cuál proveedor le recomendaría a la gerencia de la compañía? ¿Por qué?}
+
+Para determinar la recomendación del proveedor se analizarán detalladamente los datos disponibles, examinando tanto las variables numéricas como las no numéricas para comprender la estructura y calidad de la información. Se aplicarán técnicas estadísticas y se utilizarán herramientas gráficas, como los diagramas de cajas, para visualizar la distribución de los indicadores clave, identificando patrones, variabilidad y valores atípicos.  
+
+\vspace{0.5cm}
+Este análisis se complementará con el cálculo de medidas de tendencia central y dispersión, lo que permitirá comparar objetivamente el desempeño de cada proveedor. La integración de estos enfoques garantizará que la decisión final se base en criterios estadísticos sólidos y en una evaluación integral de la consistencia y predictibilidad de los datos.
+
+\begin{figure}[ht]
+    \centering 
+    \begin{minipage}{0.45\textwidth} 
+        \centering
+        \includegraphics[width=\linewidth]{img/diagr_caja_N°1.png} 
+        \caption{Diagrama de caja - Peso de azúcar por empresa} 
+        \label{fig:boxplot_azucar}
+    \end{minipage}
+    \hfill 
+    \begin{minipage}{0.45\textwidth} 
+        \centering
+        \includegraphics[width=\linewidth]{img/diagr_caja_N°2.png}
+        \caption{Diagrama de caja - Peso de bolsas vacías por empresa}
+        \label{fig:boxplot_bolsas}
+    \end{minipage}
+\end{figure}
+
+\newpage
+
+\textbf{Interpretación del diagrama de caja - Peso de azúcar:}
+\begin{itemize}
+    \item \textbf{Manuelita:} El diagrama de caja abarca de 4.8 a 5.0, con la mediana en 5.0. Valor atípico: 5.2g (por encima del límite superior).
+    \item \textbf{Incauca:} El diagrama de caja abarca de 4.8 a 5.0, con la mediana en 5.0. Valor atípico: 4.6g (por debajo del límite inferior).
+    \item Ambas empresas tienen medias cercanas a 5g, pero Manuelita muestra un valor atípico por encima de 5g (5.2g), mientras que Incauca tiene un Valor atípico por debajo (4.6g). La dispersión (IQR = 0.2) es igual en ambas, pero Manuelita tiene un rango total mayor (4.6-5.2 vs. 4.6-5.0).
+\end{itemize}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Métrica} & \textbf{Manuelita} & \textbf{Incauca} \\
+        \hline
+        Mínimo & 4.6 & 4.6 \\
+        Primer Cuartil (Q1) & 4.8 & 4.8 \\
+        Mediana (Q2) & 5.0 & 5.0 \\
+        Tercer Cuartil (Q3) & 5.0 & 5.0 \\
+        Máximo & 5.2 & 5.0 \\
+        Rango Intercuartílico IQR (Q3 - Q1) & 0.2 & 0.2 \\
+        Límite Inferior & \(4.8 - 1.5 \times 0.2 = 4.5\) & \(4.8 - 1.5 \times 0.2 = 4.5\) \\
+        Límite Superior & \(5.0 + 1.5 \times 0.2 = 5.3\) & \(5.0 + 1.5 \times 0.2 = 5.3\) \\
+        Valores atípicos & 5.2 \,(\text{superior}) & 4.6 \,(\text{inferior}) \\
+        \hline
+    \end{tabular}
+    \caption{Resumen estadístico - Peso de azúcar (gramos)}
+    
+\end{table}
+
+
+\textbf{Interpretación del diagrama de caja - Bolsas vacías:}
+\begin{itemize}
+    \item \textbf{Manuelita:} Caja de 0.2 a 0.4, mediana en 0.2. Valor atípico: 0.6g (por encima del límite superior).
+    \item \textbf{Incauca:} Caja de 0.2 a 0.6, mediana en 0.4. Sin valores atípicos.
+    \item Incauca tiene bolsas más pesadas (mediana = 0.4g vs. 0.2g) y mayor dispersión (IQR = 0.4). Manuelita muestra un valor atípico en 0.6g, indicando inconsistencia en el peso de sus bolsas.
+\end{itemize}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Métrica} & \textbf{Manuelita} & \textbf{Incauca} \\
+        \hline
+        Mínimo & 0.1 & 0.2 \\
+        Q1 & 0.2 & 0.2 \\
+        Mediana (Q2) & 0.2 & 0.4 \\
+        Q3 & 0.4 & 0.6 \\
+        Máximo & 0.6 & 0.6 \\
+        Rango Intercuartílico IQR & 0.2 & 0.4 \\
+        Límite Inferior & \(0.2 - 1.5 \times 0.2 = -0.1\) & \(0.2 - 1.5 \times 0.4 = -0.4\) \\
+        Límite Superior & \(0.4 + 1.5 \times 0.2 = 0.7\) & \(0.6 + 1.5 \times 0.4 = 1.2\) \\
+        Valores atípicos & 0.6 \,(\text{superior}) & Ninguno \\
+        \hline
+    \end{tabular}
+    \caption{Resumen estadístico - Peso de bolsas vacías (gramos)}
+\end{table}
+
+{\large \textbf{Conclusión}}:  
+Aunque Manuelita tiene una media de azúcar ligeramente superior, Incauca destaca por su menor variabilidad (CV) en el peso del azúcar y mayor consistencia en el peso de las bolsas vacías. Dado que ninguna empresa cumple plenamente con los 5g, se prioriza la consistencia sobre la cercanía al valor ideal, ya que esto refleja un proceso de producción más controlado y predecible.  
+
+\vspace{0.5cm} 
+\textbf Seleccionar a Incauca, exigiendo ajustes para alcanzar los 5g, dado que su menor dispersión facilita correcciones técnicas.
 	
 \end{document}
